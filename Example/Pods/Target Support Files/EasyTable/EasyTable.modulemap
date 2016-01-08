@@ -1,6 +1,0 @@
-framework module EasyTable {
-  umbrella header "EasyTable-umbrella.h"
-
-  export *
-  module * { export * }
-}
