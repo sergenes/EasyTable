@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import EasyTable
 
 class ViewController: UIViewController {
+    var easyTableController: EasyTableViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
