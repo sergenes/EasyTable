@@ -1,0 +1,20 @@
+PODS:
+  - EasyTable (0.1.0)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
+
+DEPENDENCIES:
+  - EasyTable (from `../`)
+  - Nimble (= 3.0.0)
+  - Quick (~> 0.8.0)
+
+EXTERNAL SOURCES:
+  EasyTable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyTable: 73c15901fd71f8e09dc10658f29aad6fc690fe2e
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+
+COCOAPODS: 0.38.2

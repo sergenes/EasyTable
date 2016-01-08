@@ -1,0 +1,6 @@
+framework module Pods_EasyTable_Example {
+  umbrella header "Pods-EasyTable_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

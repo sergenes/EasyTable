@@ -1,0 +1,6 @@
+framework module Pods_EasyTable_Tests {
+  umbrella header "Pods-EasyTable_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
