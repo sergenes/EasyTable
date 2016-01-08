@@ -12,7 +12,7 @@
 		1E05DAAF1C3EEF3D00F543CC /* EasyTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05DAAE1C3EEF3D00F543CC /* EasyTableTests.swift */; };
 		1E05DABA1C3EF03700F543CC /* EasyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05DAB91C3EF03700F543CC /* EasyTableViewController.swift */; };
 		1E05DABB1C3EF03700F543CC /* EasyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05DAB91C3EF03700F543CC /* EasyTableViewController.swift */; };
-		1E05DABD1C3EF08400F543CC /* EasyTable.swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1E05DABC1C3EF08400F543CC /* EasyTable.swift.podspec */; };
+		1E05DABD1C3EF08400F543CC /* EasyTable.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1E05DABC1C3EF08400F543CC /* EasyTable.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +33,7 @@
 		1E05DAAE1C3EEF3D00F543CC /* EasyTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyTableTests.swift; sourceTree = "<group>"; };
 		1E05DAB01C3EEF3D00F543CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E05DAB91C3EF03700F543CC /* EasyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTableViewController.swift; sourceTree = "<group>"; };
-		1E05DABC1C3EF08400F543CC /* EasyTable.swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyTable.swift.podspec; sourceTree = "<group>"; };
+		1E05DABC1C3EF08400F543CC /* EasyTable.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyTable.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				1E05DAA11C3EEF3D00F543CC /* EasyTable */,
 				1E05DAAD1C3EEF3D00F543CC /* EasyTableTests */,
 				1E05DAA01C3EEF3D00F543CC /* Products */,
-				1E05DABC1C3EF08400F543CC /* EasyTable.swift.podspec */,
+				1E05DABC1C3EF08400F543CC /* EasyTable.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E05DABD1C3EF08400F543CC /* EasyTable.swift.podspec in Resources */,
+				1E05DABD1C3EF08400F543CC /* EasyTable.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

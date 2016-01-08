@@ -4,7 +4,6 @@ s.version = '1.0'
 s.license = 'Apache-2.0'
 s.summary = 'Use static UITableView Made insanely simple'
 s.homepage = 'https://github.com/sergenes/EasyTable'
-s.social_media_url = ''
 s.authors = { 'Sergey Nes' => 'serge.nes@gmail.com' }
 s.source = { :git => 'https://github.com/sergenes/EasyTable.git', :tag => s.version }
 
