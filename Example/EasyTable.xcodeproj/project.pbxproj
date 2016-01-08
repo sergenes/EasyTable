@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E05DAC81C3FB4B800F543CC /* EasyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05DAC71C3FB4B800F543CC /* EasyTableViewController.swift */; };
+		1E05DAC81C3FB4B800F543CC /* EasyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E05DAC71C3FB4B800F543CC /* EasyTable.swift */; };
 		2445B4B8194E4749EE1EAB95 /* Pods_EasyTable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1825C58515E67CB18E0663A9 /* Pods_EasyTable_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,7 +31,7 @@
 /* Begin PBXFileReference section */
 		1825C58515E67CB18E0663A9 /* Pods_EasyTable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1A2C5529BEA5F4C097B07D /* Pods_EasyTable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E05DAC71C3FB4B800F543CC /* EasyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTableViewController.swift; sourceTree = "<group>"; };
+		1E05DAC71C3FB4B800F543CC /* EasyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyTable.swift; sourceTree = "<group>"; };
 		34A5487E72C959C776F5D493 /* Pods-EasyTable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTable_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTable_Tests/Pods-EasyTable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E41A031EAB368F6E1464471 /* Pods-EasyTable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTable_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTable_Example/Pods-EasyTable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		57C44798AA0F039EE77962F4 /* Pods-EasyTable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTable_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTable_Tests/Pods-EasyTable_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 		1E05DAC11C3FB39B00F543CC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1E05DAC71C3FB4B800F543CC /* EasyTableViewController.swift */,
+				1E05DAC71C3FB4B800F543CC /* EasyTable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -387,7 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E05DAC81C3FB4B800F543CC /* EasyTableViewController.swift in Sources */,
+				1E05DAC81C3FB4B800F543CC /* EasyTable.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
