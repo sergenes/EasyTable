@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol ClickHandler {
+public protocol ClickHandler {
     func onCellClick(rowIndex: Int)
 }
 
-protocol CellHolder {
+public protocol CellHolder {
     func getReuseIdentifier() -> String
     func inflate(tableView :UITableView, indexPath:NSIndexPath ) -> UITableViewCell!
     func onAction()
@@ -21,85 +21,93 @@ protocol CellHolder {
     func getGroup() -> Int
 }
 
-class BaseViewHolder: CellHolder {
-    var group: Int = 0
-    var title: String = ""
-    var reuseIdentifier: String = ""
-    var selected:Bool = false
+public class BaseViewHolder: CellHolder {
+    public var group: Int = 0
+    public var title: String = ""
+    public var reuseIdentifier: String = ""
+    public var selected:Bool = false
     
-    init(reuseIdentifier: String, title: String){
+    public init(reuseIdentifier: String, title: String){
         self.title = title
         self.reuseIdentifier = reuseIdentifier
     }
     
-    convenience init(reuseIdentifier: String, title: String, group: Int){
+    public convenience init(reuseIdentifier: String, title: String, group: Int){
         self.init(reuseIdentifier: reuseIdentifier, title: title)
         self.title = title
         self.reuseIdentifier = reuseIdentifier
         self.group = group
     }
     
-    convenience init(reuseIdentifier: String, title: String, selected: Bool, group: Int){
+    public convenience init(reuseIdentifier: String, title: String, selected: Bool, group: Int){
         self.init(reuseIdentifier: reuseIdentifier, title: title, group: group)
         self.selected = selected
     }
     
-    func getReuseIdentifier() -> String{
+    public func getReuseIdentifier() -> String{
         return self.reuseIdentifier
     }
     
-    func inflate(tableView :UITableView, indexPath:NSIndexPath ) -> UITableViewCell!{
+    public func inflate(tableView :UITableView, indexPath:NSIndexPath ) -> UITableViewCell!{
         return nil
     }
     
-    func onAction(){
+    public func onAction(){
     }
     
-    func setDefaultValues(){
+    public func setDefaultValues(){
         self.selected = false
     }
     
-    func setGroup(group: Int){
+    public func setGroup(group: Int){
         self.group = group
     }
     
-    func getGroup() -> Int{
+    public func getGroup() -> Int{
         return group
     }
 }
 
-class EasyTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var rowSource: Array<CellHolder> = []
+public class EasyTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    public var rowSource: Array<CellHolder> = []
     
     @IBOutlet weak var tableView: UITableView!
     
-    var clickHandler: ClickHandler!
+    public var clickHandler: ClickHandler!
+    
+    public func reloadData(){
+        tableView.reloadData()
+    }
     
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    func addRow(row:CellHolder){
+    public func getRow(index: Int) -> CellHolder{
+        return rowSource[index]
+    }
+    
+    public func addRow(row:CellHolder){
         rowSource.append(row)
     }
     
     // MARK: Data Sources and Delegates
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     // MARK: - Table Data Source
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rowSource.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let holder: CellHolder = rowSource[indexPath.row]
         
@@ -109,7 +117,7 @@ class EasyTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     // MARK: - Table Delegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         clickHandler.onCellClick(indexPath.row)
     }
     
